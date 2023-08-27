@@ -1,0 +1,32 @@
+
+:is(h1, h2, a){
+    color: #fff;
+}
+
+.container-erro{
+    width: 100vw;
+    height: calc(100vh - 60px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-erro h1{
+    font-size: 100px;
+    font-weight: bold;
+}
+
+.container-erro a{
+    text-decoration: none;
+    background-color: #116FEB;
+    font-size: 20px;
+    padding: 10px;
+    margin: 10px;
+    transition: all 0.8s;
+}
+
+.container-erro a:hover{
+    color: #000;
+    transition: all 0.8s;
+}

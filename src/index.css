@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Tamil:wght@200&family=Edu+VIC+WA+NT+Beginner&family=Heebo:wght@100&family=Kanit:wght@600&family=Montserrat:wght@300;400;600&family=Mukta:wght@200&family=Mulish:ital,wght@0,200;0,300;1,500&family=Prompt:ital,wght@0,200;1,300&display=swap');
+
 *{
   margin: 0;
   padding: 0;
@@ -6,8 +8,8 @@
 
 
 body{
-  font-family: sans-serif;
   background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+  font-family: 'Anek Tamil', sans-serif;
 }
 
 .app{

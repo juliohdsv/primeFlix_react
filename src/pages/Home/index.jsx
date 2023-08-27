@@ -6,12 +6,12 @@ import "./style.css";
 
 export default function Home(){
 
-    const [films, setFilms] = useState([]);
+    const [movies, setMovies] = useState([]);
+    const [loading, setLoading] = useState(true);
 
     useEffect(()=>{
 
         async function loadMovies(){
-            
             try{
 
                 const { data } = await tmdbApi.get("movie/now_playing", {
@@ -22,7 +22,8 @@ export default function Home(){
                     }   
                 })
                 
-                setFilms(data.results.slice(0,10))
+                setMovies(data.results.slice(0,10));
+                setLoading(false);
 
             }
             catch(err){
@@ -34,15 +35,23 @@ export default function Home(){
 
     }, [])
 
+    if(loading){
+        return(
+            <div className="loading">
+                <h2>Carregando filmes...</h2>
+            </div>
+        )
+    }
+
     return(
         <div className="container">
             <div className="list-films">
-                {films.map((film) => {
+                {movies.map((movie) => {
                         return(
-                            <article key={film.id}>
-                                <strong>{film.title}</strong>
-                                <img src={`http://image.tmdb.org/t/p/original/${film.poster_path}`} alt={film.title}/>
-                                <Link to={`/film/${film.id}`}>Acessar</Link>
+                            <article key={movie.id}>
+                                <strong>{movie.title}</strong>
+                                <img src={`http://image.tmdb.org/t/p/original/${movie.poster_path}`} alt={movie.title}/>
+                                <Link to={`/movie/${movie.id}`}>Acessar</Link>
                             </article> 
                         ) 
                     })
