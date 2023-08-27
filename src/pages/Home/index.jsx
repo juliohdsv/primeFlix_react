@@ -22,7 +22,7 @@ export default function Home(){
                     }   
                 })
                 
-                setMovies(data.results.slice(0,10));
+                setMovies(data.results.slice(0,20));
                 setLoading(false);
 
             }
