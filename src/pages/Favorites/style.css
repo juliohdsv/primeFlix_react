@@ -74,3 +74,20 @@
     color: #d11c1c;
     transition: all 0.8s;
 }
+
+@media(min-width: 390px) and (max-width: 720px){
+
+    .container-favorites ul{
+        width: 90vw;
+    }
+
+    .container-favorites ul li{
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        align-content: flex-start;
+        flex-direction: column;
+    }     
+}
+
+
