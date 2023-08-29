@@ -1,4 +1,4 @@
-#  Started project
+#  Start project
 
 ### `yarn`
 
@@ -22,6 +22,6 @@ About movies on site https://www.themoviedb.org/
 
 ## End-points
   
-> /home
-> /movie/:id
-> /favorites
+* /home
+* /movie/:id
+* /favorites
