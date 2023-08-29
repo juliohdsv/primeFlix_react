@@ -7,7 +7,7 @@ header{
     background-color:#000;
 }
 
-.icon{
+header .icon{
     text-decoration: none;
     font-size: 30px;
     cursor: pointer;
@@ -15,7 +15,7 @@ header{
     font-weight: bold;
 }
 
-.favorites{
+header .favorites{
     cursor: pointer;
     background-color: #fff;
     padding: 5px 14px;
@@ -25,7 +25,7 @@ header{
     transition: all 0.8s;
 }
 
-.favorites:hover{
+header .favorites:hover{
     background-color:#000;
     border: 1px solid #fff;
     color: #fff;

@@ -1,0 +1,76 @@
+
+
+.container-favorites{
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+}
+
+.container-favorites h1{
+    margin-bottom:  14px;
+}
+
+.container-favorites span{
+    font-size: 18px;
+}
+
+.container-favorites ul{
+    width: 720px;
+}
+
+.container-favorites ul li{
+    list-style: none;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 14px;
+    padding: 10px;
+    border-left: 4px solid #000;
+    border-bottom: 1px solid #020202;
+    border-radius: 6px;
+    background-color: #ffffff8f;
+    color: #000;    
+}
+
+.container-favorites .d-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-favorites .d-btn a{
+    text-decoration: none;
+    color: #fff;
+    background-color: #0000009c;
+    border-radius: 5px;
+    padding: 4px;
+    margin-right: 14px;
+    transition: all 0.8s;
+    font-weight: normal;
+}
+
+.container-favorites .d-btn a:hover{
+    color: #ffffff;
+    background-color: #000;
+    transition: all 0.8s;
+}
+
+.container-favorites .d-btn button{
+    border: none;
+    background-color: #2574fc00;
+}
+
+.container-favorites .d-btn button i{
+    color: rgb(0, 0, 0);
+    font-size: 1.2rem;
+    padding: 3px;
+    transition: all 0.8s;
+}
+
+.container-favorites div button i:hover{
+    color: #d11c1c;
+    transition: all 0.8s;
+}

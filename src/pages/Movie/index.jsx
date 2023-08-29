@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react"
 import { useParams, useNavigate } from "react-router-dom"
+import { toast } from 'react-toastify';
 
 import tmdbApi from "../../services/tmdbApi";
 import "./style.css";
@@ -44,13 +45,13 @@ export default function Movie(){
         const hasMovie = moviesSave.some((movieSave)=> movieSave.id === movie.id);
 
         if(hasMovie){
-            alert(`O filme ${movie.title} já está na sua lista`);
+            toast.warn(`O filme ${movie.title} já está na sua lista`);
             return;
         }
 
         moviesSave.push(movie);
         localStorage.setItem("@primeflix", JSON.stringify(moviesSave));
-        alert("Filme salvo com sucesso");
+        toast.success("Filme salvo com sucesso");
     }
 
     if(loading){
