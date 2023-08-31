@@ -25,3 +25,6 @@ About movies on site https://www.themoviedb.org/
 * /home
 * /movie/:id
 * /favorites
+
+### Deploy of app
+[https://primeflixreactmovie.netlify.app/]
