@@ -19,7 +19,7 @@ export default function Movie(){
 
                     const { data } = await tmdbApi.get(`movie/${id}`, {
                     params:{
-                        api_key: "342d337f64b3b71256445dcd9ce0984b",
+                        api_key: "",
                         language: "pt-BR"
                     }   
                 })
