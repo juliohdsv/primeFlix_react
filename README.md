@@ -1,4 +1,8 @@
-#  Start project
+
+# Deploy of app
+[https://primeflixreactmovie.netlify.app/]
+
+## Start project
 
 ### `yarn`
 
@@ -26,5 +30,4 @@ About movies on site https://www.themoviedb.org/
 * /movie/:id
 * /favorites
 
-### Deploy of app
-[https://primeflixreactmovie.netlify.app/]
+
