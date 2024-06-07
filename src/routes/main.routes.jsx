@@ -9,7 +9,6 @@ import Favorites from "../pages/Favorites/index";
 export default function RoutesApp(){
     return(
         <BrowserRouter>
-            <Header/>
                 <Routes>
                     <Route path="/" element={<Home/>}/>
                     <Route path="/home" element={<Home/>}/>
